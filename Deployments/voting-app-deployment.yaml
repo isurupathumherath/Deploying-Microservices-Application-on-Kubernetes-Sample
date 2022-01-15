@@ -11,13 +11,13 @@ spec:
     matchLabels:
       name: voting-app-pod
       app: demo-voting-app
-      
+
   template:
     metadata:
-    name: voting-app-pod
-    labels:
       name: voting-app-pod
-      app: demo-voting-app
+      labels:
+        name: voting-app-pod
+        app: demo-voting-app
     spec:
       containers:
         - name: voting-app
