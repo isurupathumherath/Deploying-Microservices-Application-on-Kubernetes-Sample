@@ -9,12 +9,3 @@ spec:
   containers:
     - name: worker-app
       image: kodekloud/examplevotingapp_worker:v1
-      resources:
-        limits:
-          memory: "128Mi"
-          cpu: "500m"
-      env:
-        - name: POSTGRES_USER
-          value: "postgres"
-        - name: POSTGRESS_PASSWORD
-          value: "postgres"

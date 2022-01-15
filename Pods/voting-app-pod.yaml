@@ -9,9 +9,5 @@ spec:
   containers:
   - name: voting-app-pod
     image: kodekloud/examplevotingapp_vote:v1
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
     ports:
       - containerPort: 80
